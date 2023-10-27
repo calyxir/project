@@ -5,10 +5,11 @@ The current structure for these Calyx meetings is that we have one topic per mee
 
 It is usually really helpful to have something written down ahead of time about a given meeting topic; everybody should make an effort to read and comment asynchronously before the meeting. That way, we don't have to waste time recapping the basic idea and can get right into the actual discussion that synchronous meeting time is best suited for.
 
-| date       | leader           | topic            | link      |
-|------------|------------------|------------------|-----------|
-| 2023-10-16 | Griffin & Adrian | undefinedness    | [#922][]  |
-| 2023-10-23 | (skip)           |                  |           |
+| date       | leader                      | topic            | link      |
+|------------|-----------------------------|------------------|-----------|
+| 2023-10-16 | @EclecticGriffin & @sampsyo | undefinedness    | [#922][]  |
+| 2023-10-23 | (skip)                      |                  |           |
+| 2023-10-30 | (skip)                      |                  |           |
 
 Possible ideas for future topics:
 
