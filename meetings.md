@@ -8,8 +8,7 @@ It is usually really helpful to have something written down ahead of time about 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
 | 2023-10-16 | @EclecticGriffin & @sampsyo | undefinedness    | [#922][]  |
-| 2023-10-23 | (skip)                      |                  |           |
-| 2023-10-30 | (skip)                      |                  |           |
+| 2023-11-13 | @anshumanmohan              | `either`         | [#1766][] |
 
 Possible ideas for future topics:
 
@@ -21,3 +20,4 @@ Possible ideas for future topics:
 [#922]: https://github.com/cucapra/calyx/discussions/922#discussioncomment-7273533
 [#1725]: https://github.com/cucapra/calyx/issues/1725
 [#1699]: https://github.com/cucapra/calyx/issues/1699
+[#1766]: https://github.com/cucapra/calyx/issues/1766
