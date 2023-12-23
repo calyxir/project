@@ -16,6 +16,14 @@ It is usually really helpful to have something written down ahead of time about 
 
 ### Schedule
 
+#### Spring '24
+
+| date       | leader                      | topic            | link      |
+|------------|-----------------------------|------------------|-----------|
+| 2024-01-08 | @rachitnigam | Calyx in 2024    |  |
+| 2023-01-15 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
+
+#### Fall '23 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
 | 2023-10-16 | @EclecticGriffin & @sampsyo | undefinedness    | [#922][]  |
