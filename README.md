@@ -7,6 +7,12 @@ The current structure for these Calyx meetings is that we have one topic per mee
 
 It is usually really helpful to have something written down ahead of time about a given meeting topic; everybody should make an effort to read and comment asynchronously before the meeting. That way, we don't have to waste time recapping the basic idea and can get right into the actual discussion that synchronous meeting time is best suited for.
 
+
+| date       | leader                      | topic            | link      |
+|------------|-----------------------------|------------------|-----------|
+| 2024-01-08 | @rachitnigam | Calyx in 2024    |  |
+| 2023-01-15 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
+
 ### Proposed Topics
 
 * Return to the `with` debacle [#1699][]
@@ -14,14 +20,8 @@ It is usually really helpful to have something written down ahead of time about 
 * go/done changes [#1725][] 
 * A plan to eliminate implicit zero-assignment for `@control` ports
 
-### Schedule
 
-#### Spring '24
-
-| date       | leader                      | topic            | link      |
-|------------|-----------------------------|------------------|-----------|
-| 2024-01-08 | @rachitnigam | Calyx in 2024    |  |
-| 2023-01-15 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
+### Old Meetings
 
 #### Fall '23 
 | date       | leader                      | topic            | link      |
