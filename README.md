@@ -23,6 +23,7 @@ It is usually really helpful to have something written down ahead of time about 
 * Ops-based model for the IR (rachit)
 * go/done changes [#1725][] 
 * A plan to eliminate implicit zero-assignment for `@control` ports
+* Formalizing our open-source governance
 
 
 ### Old Meetings
