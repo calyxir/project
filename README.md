@@ -20,6 +20,7 @@ It is usually really helpful to have something written down ahead of time about 
 
 ### Proposed Topics
 
+* Test Infrastructure Audit (calyxir/calyx#1880)
 * Return to the `with` debacle [#1699][]
 * Ops-based model for the IR (rachit)
 * go/done changes [#1725][] 
