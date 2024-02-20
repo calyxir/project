@@ -14,6 +14,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2023-01-22 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
 | 2023-01-29 | @sampsyo | fud2 | [#1837][] |
 | 2023-02-05 | @calebmkim | Zero Cycle Transitions | calyxir/calyx#1828 |
+| 2023-03-04 | @ayakayorihiro | Deprecating `@external` | calyxir/calyx#1603 |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
