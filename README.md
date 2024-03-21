@@ -1,7 +1,12 @@
 Calyx Open Design Meetings
 =================================
 
-[**Zoom meeting link**](https://cornell.zoom.us/j/91029135563?pwd=YlArTmN6MVRlYmc2aHVRclI5cnRXUT09)
+### Meeting Details
+
+- **Time**: 1.30pm ET (Spring 2024)
+- [**Zoom meeting link**](https://cornell.zoom.us/j/91029135563?pwd=YlArTmN6MVRlYmc2aHVRclI5cnRXUT09)
+
+### Structure
 
 The current structure for these Calyx meetings is that we have one topic per meetings. We pick a topic on a "first come, first served" basis. If we don't have a topic for a given week, no big deal; we just skip. If you don't have write access to this repository, please open a pull request updating this file to propose a topic.
 
