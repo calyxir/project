@@ -22,7 +22,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2023-03-04 | @ayakayorihiro | Deprecating `@external` | calyxir/calyx#1603 |
 | 2024-03-11 | @calebmkim @parthsarkar17 | performance dashboard | calyxir/calyx#1960 |
 | 2024-04-15 | @anshumanmohan | eDSL docs/tutorial | calyxir/calyx#1908 |
-| 2024-04-15 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
+| 2024-04-22 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
