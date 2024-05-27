@@ -24,6 +24,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2024-04-15 | @anshumanmohan | eDSL docs/tutorial | calyxir/calyx#1908 |
 | 2024-04-22 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
 | 2024-05-06 | @rachitnigam | Repo cleanup and Sync | |
+| 2024-06-10 | @ayakayorihiro | Brave New Testbench | |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
