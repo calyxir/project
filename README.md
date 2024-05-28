@@ -25,7 +25,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2024-04-22 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
 | 2024-05-06 | @rachitnigam | Repo cleanup and Sync | |
 | 2024-06-03 | @jiahanxie | PyTorch to FPGA | |
-| 2024-06-10 | @ayakayorihiro | Brave New Testbench | |
+| 2024-06-10 | @ayakayorihiro | Brave New Testbench | calyxir/calyx#2063 |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
