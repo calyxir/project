@@ -27,7 +27,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2024-06-03 | @jiahanxie | PyTorch to FPGA | |
 | 2024-06-10 | @ayakayorihiro | Brave New Testbench | calyxir/calyx#2086 |
 | 2024-06-24 | @nathanielnrn | Nested Ref Cells | calyxir/calyx#2079 |
-| 2024-07-01 | @eclecticgriffin | Undefined Values and `'x` | TK |
+| 2024-07-01 | @eclecticgriffin | Undefined Values and `'x` | [#2184](https://github.com/calyxir/calyx/issues/2184) |
 | 2024-07-08 | @sampsyo | Zulip | |
 | 2024-07-15 |  | |
 | 2024-07-22 | @cgyurgyik | egglog $\cup$ calyx | |
