@@ -32,6 +32,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2024-07-22 | @cgyurgyik | egglog $\cup$ calyx | |
 | 2024-07-29 | @jku20 | fud2 (again) | |
 | 2024-08-05 | @anshumanmohan | Accelerated Programmable Packet Scheduling | https://github.com/cucapra/packet-scheduling/discussions/3, https://github.com/cucapra/packet-scheduling/discussions/13, https://github.com/cucapra/packet-scheduling/discussions/38 |
+| 2024-08-26 | @smd21 | Cider Debug Extension for VSCode | |
 
 
 
