@@ -3,7 +3,7 @@ Calyx Open Design Meetings
 
 ### Meeting Details
 
-- **Time**: 2:30pm ET (Summer 2024)
+- **Time**: 4:00pm ET (Fall 2024)
 - [**Zoom meeting link**](https://cornell.zoom.us/j/91029135563?pwd=YlArTmN6MVRlYmc2aHVRclI5cnRXUT09)
 
 ### Structure
