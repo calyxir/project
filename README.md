@@ -15,24 +15,25 @@ It is usually really helpful to have something written down ahead of time about 
 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
-| 2024-01-08 | @rachitnigam | Calyx in 2024 | [#1825][] |
-| 2023-01-22 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
-| 2023-01-29 | @sampsyo | fud2 | [#1837][] |
-| 2023-02-05 | @calebmkim | Zero Cycle Transitions | calyxir/calyx#1828 |
-| 2023-03-04 | @ayakayorihiro | Deprecating `@external` | calyxir/calyx#1603 |
-| 2024-03-11 | @calebmkim @parthsarkar17 | performance dashboard | calyxir/calyx#1960 |
-| 2024-04-15 | @anshumanmohan | eDSL docs/tutorial | calyxir/calyx#1908 |
-| 2024-04-22 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
-| 2024-05-06 | @rachitnigam | Repo cleanup and Sync | |
-| 2024-06-03 | @jiahanxie | PyTorch to FPGA | |
-| 2024-06-10 | @ayakayorihiro | Brave New Testbench | calyxir/calyx#2086 |
-| 2024-06-24 | @nathanielnrn | Nested Ref Cells | calyxir/calyx#2079 |
-| 2024-07-01 | @eclecticgriffin | Undefined Values and `'x` | [#2184](https://github.com/calyxir/calyx/issues/2184) |
-| 2024-07-08 | @sampsyo | Zulip | |
-| 2024-07-22 | @cgyurgyik | egglog $\cup$ calyx | |
-| 2024-07-29 | @jku20 | fud2 (again) | |
-| 2024-08-05 | @anshumanmohan | Accelerated Programmable Packet Scheduling | https://github.com/cucapra/packet-scheduling/discussions/3, https://github.com/cucapra/packet-scheduling/discussions/13, https://github.com/cucapra/packet-scheduling/discussions/38 |
+| 2024-09-16 | @janpaulpl | Formalizing `par` semantics with Concurrent KAT | calyxir/calyx#2278 |
 | 2024-08-26 | @smd21 | Cider Debug Extension for VSCode | |
+| 2024-08-05 | @anshumanmohan | Accelerated Programmable Packet Scheduling | https://github.com/cucapra/packet-scheduling/discussions/3, https://github.com/cucapra/packet-scheduling/discussions/13, https://github.com/cucapra/packet-scheduling/discussions/38 |
+| 2024-07-29 | @jku20 | fud2 (again) | |
+| 2024-07-22 | @cgyurgyik | egglog $\cup$ calyx | |
+| 2024-07-08 | @sampsyo | Zulip | |
+| 2024-07-01 | @eclecticgriffin | Undefined Values and `'x` | [#2184](https://github.com/calyxir/calyx/issues/2184) |
+| 2024-06-24 | @nathanielnrn | Nested Ref Cells | calyxir/calyx#2079 |
+| 2024-06-10 | @ayakayorihiro | Brave New Testbench | calyxir/calyx#2086 |
+| 2024-06-03 | @jiahanxie | PyTorch to FPGA | |
+| 2024-05-06 | @rachitnigam | Repo cleanup and Sync | |
+| 2024-04-22 | @calebmkim | inliner revamp | calyxir/calyx#1813 |
+| 2024-04-15 | @anshumanmohan | eDSL docs/tutorial | calyxir/calyx#1908 |
+| 2024-03-11 | @calebmkim @parthsarkar17 | performance dashboard | calyxir/calyx#1960 |
+| 2023-03-04 | @ayakayorihiro | Deprecating `@external` | calyxir/calyx#1603 |
+| 2023-02-05 | @calebmkim | Zero Cycle Transitions | calyxir/calyx#1828 |
+| 2023-01-29 | @sampsyo | fud2 | [#1837][] |
+| 2023-01-22 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
+| 2024-01-08 | @rachitnigam | Calyx in 2024 | [#1825][] |
 
 
 
@@ -55,8 +56,8 @@ It is usually really helpful to have something written down ahead of time about 
 #### Fall '23 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
-| 2023-10-16 | @EclecticGriffin & @sampsyo | undefinedness    | [#922][]  |
 | 2023-11-13 | @anshumanmohan              | `either`         | [#1766][] |
+| 2023-10-16 | @EclecticGriffin & @sampsyo | undefinedness    | [#922][]  |
 
 
 [#922]: https://github.com/cucapra/calyx/discussions/922#discussioncomment-7273533
