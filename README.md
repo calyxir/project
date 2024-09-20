@@ -15,6 +15,7 @@ It is usually really helpful to have something written down ahead of time about 
 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
+| 2024-09-30 | @ayakayorihiro | par-to-seq | |
 | 2024-09-23 | @teqdruid | ESI + Calyx (+ PyCDE)? | |
 | 2024-09-16 | @janpaulpl | Formalizing `par` semantics with Concurrent KAT | calyxir/calyx#2278 |
 | 2024-08-26 | @smd21 | Cider Debug Extension for VSCode | |
