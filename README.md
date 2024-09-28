@@ -15,6 +15,7 @@ It is usually really helpful to have something written down ahead of time about 
 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
+| 2024-10-21 | @sampsyo @ekiwi | PR process & "code owners" | |
 | 2024-10-07 | @parthsarkar17 | FSMs as first class constructs | In progress |
 | 2024-09-30 | @ayakayorihiro | par-to-seq | https://calyx.zulipchat.com/#narrow/stream/423433-general/topic/par-to-seq/near/470032666 |
 | 2024-09-23 | @teqdruid | ESI + Calyx (+ PyCDE)? | |
