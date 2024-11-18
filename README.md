@@ -16,6 +16,7 @@ It is usually really helpful to have something written down ahead of time about 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
 | 2024-11-25 | @ayakayorihiro | Static Promotion semantics bug | calyxir/calyx#2349 |
+| 2024-11-18 | @ethanuppal | Rust FFI | https://github.com/calyxir/calyx/pull/2181 |
 | 2024-11-04 | @sampsyo | Migration to fud2 | |
 | 2024-10-21 | @sampsyo @ekiwi | PR process & "code owners" | |
 | 2024-10-07 | @parthsarkar17 | FSMs as first class constructs | https://github.com/calyxir/calyx/issues/2297#issue-2568245134 |
