@@ -15,7 +15,7 @@ It is usually really helpful to have something written down ahead of time about 
 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
-| 2025-02-17 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
+| 2025-02-24 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
 | 2024-12-09 | @ayakayorihiro | Static Promotion semantics bug | calyxir/calyx#2349 |
 | 2024-11-18 | @ethanuppal | Rust FFI | https://github.com/calyxir/calyx/pull/2181 |
 | 2024-11-04 | @sampsyo | Migration to fud2 | |
