@@ -12,7 +12,28 @@ The current structure for these Calyx meetings is that we have one topic per mee
 
 It is usually really helpful to have something written down ahead of time about a given meeting topic; everybody should make an effort to read and comment asynchronously before the meeting. That way, we don't have to waste time recapping the basic idea and can get right into the actual discussion that synchronous meeting time is best suited for.
 
+| date       | leader                      | topic            | link      |
+|------------|-----------------------------|------------------|-----------|
+| 2025-02-24 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
 
+
+[#1837]: https://github.com/orgs/calyxir/discussions/1837
+[#1825]: https://github.com/orgs/calyxir/discussions/1825
+
+### Proposed Topics
+
+* Redesign eDSL Standard Library (calyxir/calyx#1929)
+* Test Infrastructure Audit (calyxir/calyx#1880)
+* Return to the `with` debacle [#1699][]
+* Ops-based model for the IR (rachit)
+* go/done changes [#1725][] 
+* A plan to eliminate implicit zero-assignment for `@control` ports
+* Formalizing our open-source governance
+
+
+### Old Meetings
+
+#### 2024
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
 | 2025-02-24 | @KelvinChung2000 | FSMs implementation and enhancement | https://github.com/calyxir/calyx/pull/2394 |
@@ -43,24 +64,6 @@ It is usually really helpful to have something written down ahead of time about 
 | 2023-01-29 | @sampsyo | fud2 | [#1837][] |
 | 2023-01-22 | @rachitnigam | Deprecating `@static` | calyxir/calyx#1429 |
 | 2024-01-08 | @rachitnigam | Calyx in 2024 | [#1825][] |
-
-
-
-[#1837]: https://github.com/orgs/calyxir/discussions/1837
-[#1825]: https://github.com/orgs/calyxir/discussions/1825
-
-### Proposed Topics
-
-* Redesign eDSL Standard Library (calyxir/calyx#1929)
-* Test Infrastructure Audit (calyxir/calyx#1880)
-* Return to the `with` debacle [#1699][]
-* Ops-based model for the IR (rachit)
-* go/done changes [#1725][] 
-* A plan to eliminate implicit zero-assignment for `@control` ports
-* Formalizing our open-source governance
-
-
-### Old Meetings
 
 #### Fall '23 
 | date       | leader                      | topic            | link      |
