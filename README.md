@@ -15,7 +15,7 @@ It is usually really helpful to have something written down ahead of time about 
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
 | 2025-02-24 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
-
+| 2025-03-03 | @KelvinChung2000 | FSMs implementation and enhancement | https://github.com/calyxir/calyx/pull/2394 |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
@@ -36,7 +36,6 @@ It is usually really helpful to have something written down ahead of time about 
 #### 2024
 | date       | leader                      | topic            | link      |
 |------------|-----------------------------|------------------|-----------|
-| 2025-02-24 | @KelvinChung2000 | FSMs implementation and enhancement | https://github.com/calyxir/calyx/pull/2394 |
 | 2025-02-17 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
 | 2024-12-09 | @ayakayorihiro | Static Promotion semantics bug | calyxir/calyx#2349 |
 | 2024-11-18 | @ethanuppal | Rust FFI | https://github.com/calyxir/calyx/pull/2181 |
