@@ -16,6 +16,7 @@ It is usually really helpful to have something written down ahead of time about 
 |------------|-----------------------------|------------------|-----------|
 | 2025-02-24 | @ayakayorihiro | calyx-py case statements | calyxir/calyx#2413 |
 | 2025-03-03 | @KelvinChung2000 | FSMs implementation and enhancement | https://github.com/calyxir/calyx/pull/2394 |
+| 2025-03-17 | @ayakayorihiro | `simplify-invoke-with` pass proposal | https://github.com/calyxir/calyx/pull/2429 | 
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
