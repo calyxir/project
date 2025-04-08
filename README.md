@@ -18,6 +18,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2025-03-03 | @KelvinChung2000 | FSMs implementation and enhancement | https://github.com/calyxir/calyx/pull/2394 |
 | 2025-03-17 | @ayakayorihiro | `simplify-invoke-with` pass proposal | https://github.com/calyxir/calyx/pull/2429 | 
 | 2025-03-24 | @eclecticgriffin  | Cider re-introduction | |
+| 2025-04-14 | @AyanaAlemayehu | CSE optimization pass proposal | [Design Proposal](https://docs.google.com/document/d/1Qxe6XExa4gI5kv3SMzMR77VFHDORagnkOgR4L2yP1q0/edit?usp=sharing) |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
