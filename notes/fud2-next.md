@@ -45,6 +45,15 @@ Using that philosophy, we can more freely make progress on the core data model.
 We can return to interesting planners and scripting interfaces in a future phase.
 
 
+Some Engineering Preliminaries
+------------------------------
+
+With that in mind, here are some engineering (not very deep) improvements we might want to make to "set the table" for interesting data model work:
+
+* Manual plan specification. We should think about how to do this in a simple, obvious way that is not necessarily convenient for the user.
+* Pre-baked plan reuse. To make these manual plans actually usable, let's provide a way to embed a few pre-specified plans inside the fud2 executable. Then, we'll build some kind of CLI option to select one of these pre-existing plans.
+
+
 Desiderata for the Data Model
 -----------------------------
 
@@ -70,3 +79,37 @@ And this way, we can iron out any additional kinks in the data model and executi
 
 [yxi]: https://docs.calyxir.org/running-calyx/fud/xilinx.html#wip-calyx-native--fud2-xilinx-workflows
 [firrtl]: https://docs.calyxir.org/running-calyx/firrtl.html
+
+### Parametric States
+
+fud2 has a lot of states, and some of them feel quite obviously like workarounds for... *something*.
+For example, fud2 currently has all of these states for Verilog code:
+
+* `verilog`
+* `verilog-noverify`
+* `synth-verilog`
+* `verilog-refmem`
+* `verilog-refmem-noverify`
+
+And for FIRRTL, we have:
+
+* `firrtl`
+* `firrtl-noverify`
+* `firrtl-with-primitives`
+* `firrtl-with-primitives-noverify`
+
+Clearly, we're headed for a combinatorial explosion here.
+Every new option for RTL code requires doubling the number of states!
+But the problem goes beyond just state proliferation;
+distinct states also require distinct ops.
+If you want to write an op that can deal with any Verilog code, for example, you need to make 5 copies of that op so it can handle any of these not-quite-the-same Verilog states.
+
+Roughly speaking, what we want is for states to be parametric.
+For example, maybe the general Verilog state is written `verilog[verify?, synth?, refmem?]`.
+Then, a concrete instance of that state could be `verilog[true, false, false]` or whatever.
+Crucially, ops should be able to specify, for each parameter to a polymorphic state, whether it cares about that parameter or not.
+For example, a general Verilog transformer could accept `verilog[?, ?, ?]` as input, indicating that it can handle any form of Verilog at all.
+A more specific one might accept `verilog[?, true, ?]` to say that any synthesizable-mode Verilog will work.
+
+Let's design the data model for these parametric states and ops, without worrying about the scripting interface or the planner.
+*If* we can come up with something useful, maybe we'll have an interesting planning problem on our hands for later.
