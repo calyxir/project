@@ -2,10 +2,11 @@ Next Steps for fud2
 ===================
 
 [fud2][] has reached a point where it is now the right "default choice" for the Calyx ecosystem, mostly replacing OG fud.
-There are many [engineering improvements][fud2 issues] to be done, but this document is about proposed next steps for its high-level design.
+There are many [engineering improvements][issues] to be done, but this document is about proposed next steps for its high-level design.
 
-[fud2 issues]: https://github.com/calyxir/calyx/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22C%3A%20fud2%22
+[issues]: https://github.com/calyxir/calyx/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22C%3A%20fud2%22
 [fud2]: https://docs.calyxir.org/running-calyx/fud2/index.html
+[tracker]: https://github.com/calyxir/calyx/issues/1878
 
 
 Design Overview
@@ -42,3 +43,30 @@ I suggest this philosophy:
 
 Using that philosophy, we can more freely make progress on the core data model.
 We can return to interesting planners and scripting interfaces in a future phase.
+
+
+Desiderata for the Data Model
+-----------------------------
+
+Here are some big things I think we could do with the data model.
+
+### Finish Off the Hypergraph, Without a Planner
+
+There's a lot of latent functionality in fud-core already for handling ops with multiple inputs and multiple outputs.
+Let's take this to its natural conclusion.
+
+In particular, let's focus on a handful of fud2 use cases that are currently hampered by the single-input, single-output restriction:
+
+* As described in [the tracker][tracker], the need to use `-s sim.data=foo.json` is an annoyance. We would like to have a way to provide `foo.futil` and `foo.json` as coequal "arguments" to a two-input plan.
+* The recently-merged [YXI-based AXI flow][yxi] is an annoyingly multi-step process, requiring 5 separate `fud2` invocations and a temporary file to produce an executable. The root cause is that the complete plan is a dag, not a path. Let's make this one command.
+* The [FIRRTL backend][firrtl] requires some larger-than-would-be-ideal ops to deal with the need to combine user-provided code with the primitives library. (My memory of this one is hazier than the other two.)
+
+In the past, the obstacle to addressing these use cases has roughly been:
+designing a perfectly flexible hypergraph-aware planner is kinda interesting and hard;
+and the CLI for interacting with this planner is hard to think about (what does `--through` mean exactly?).
+I suggest that we sidestep the planning problem and just make this stuff work using the inconvenient pre-baked plan idea.
+Even if we don't have a planner and accompanying UI that will work for every single circumstance, some of these use cases are so common that it seems OK to hand-write a plan for them.
+And this way, we can iron out any additional kinks in the data model and execution engine to support all this stuff.
+
+[yxi]: https://docs.calyxir.org/running-calyx/fud/xilinx.html#wip-calyx-native--fud2-xilinx-workflows
+[firrtl]: https://docs.calyxir.org/running-calyx/firrtl.html
