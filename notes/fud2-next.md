@@ -69,7 +69,8 @@ In particular, let's focus on a handful of fud2 use cases that are currently ham
 
 * As described in [the tracker][tracker], the need to use `-s sim.data=foo.json` is an annoyance. We would like to have a way to provide `foo.futil` and `foo.json` as coequal "arguments" to a two-input plan.
 * The recently-merged [YXI-based AXI flow][yxi] is an annoyingly multi-step process, requiring 5 separate `fud2` invocations and a temporary file to produce an executable. The root cause is that the complete plan is a dag, not a path. Let's make this one command.
-* The [FIRRTL backend][firrtl] requires some larger-than-would-be-ideal ops to deal with the need to combine user-provided code with the primitives library. (My memory of this one is hazier than the other two.)
+* Similarly, generating a [hierarchical area visualization][area svg] requires two `fud2` invocations because there is a dag in the graph of steps (produce a JSON file with the necessary data, then combine that with the original Calyx code to produce the SVG).
+* The [FIRRTL backend][firrtl] requires some larger-than-would-be-ideal ops to deal with the need to combine user-provided code with the primitives library. (My memory of this one is hazier than the others above.)
 
 In the past, the obstacle to addressing these use cases has roughly been:
 designing a perfectly flexible hypergraph-aware planner is kinda interesting and hard;
@@ -80,6 +81,7 @@ And this way, we can iron out any additional kinks in the data model and executi
 
 [yxi]: https://docs.calyxir.org/running-calyx/fud/xilinx.html#wip-calyx-native--fud2-xilinx-workflows
 [firrtl]: https://docs.calyxir.org/running-calyx/firrtl.html
+[area svg]: https://github.com/calyxir/calyx/pull/2510
 
 ### Parametric States
 
