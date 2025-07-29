@@ -52,6 +52,7 @@ With that in mind, here are some engineering (not very deep) improvements we mig
 
 * Manual plan specification. We should think about how to do this in a simple, obvious way that is not necessarily convenient for the user.
 * Pre-baked plan reuse. To make these manual plans actually usable, let's provide a way to embed a few pre-specified plans inside the fud2 executable. Then, we'll build some kind of CLI option to select one of these pre-existing plans.
+* Consider making one or two standalone fud-core clients that are *not* fud2, as a way to demonstrate its functionality. Maybe we can try to make a gcc/clang-like C/C++ driver, for instance? Having a somewhat compact fud-core client would help us write up the general ideas in the design, separate from the needs of the Calyx ecosystem.
 
 
 Desiderata for the Data Model
