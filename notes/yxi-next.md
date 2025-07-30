@@ -106,8 +106,9 @@ Let's try to use the YXI abstraction layer to implement interfaces for Altera FP
 Implicated Technical Debt
 -------------------------
 
-TK notes about:
+The YXI effort so far has exposed the existence of certain technical debt in the Calyx ecosystem.
+As part of realizing its benefits overall, let's address these things:
 
-* `ref` memories instead of `@external`
-* `dyn_mem`
-* old vs. new testbenches
+* Early on, Calyx introduced the `@external` annotation for memories that are used for input and output data. The idea is that these memories would not get implemented as *real* memories but instead as communication channels with the outside world. This was a special-purpose mechanism for top-level hardware interfaces. Since then, Calyx introduced `ref` cells: a general mechanism where components can ask to "borrow" cells from their context. This `ref` mechanism subsumes everything we wanted `@external` for and more. The AXI system already uses `ref` memories, but this idea has not propagated across the entire ecosystem. We should deprecate or remove `@external` everywhere and replace it with `ref`.
+* The Calyx standard library provides `seq_mem_*`, a memory that is guaranteed to have 1-cycle access latency. This is the main kind of memory used everywhere in Calyx. However, for realistic external interfaces, we don't want to make this 1-cycle guarantee. The YXI effort therefore introduced `dyn_mem_*`, a dynamically timed alternative. We should probably move all Calyx code to use `dyn_mem_*` instead of `seq_mem_*` for top-level interfaces, including updating the documentation to recommend this.
+* YXI should power the standard Calyx testbench. That is, YXI provides an opportunity to factor out testbench stuff that has, for a long time, been unfortunately integrated into the Calyx compiler. See [#1603](https://github.com/calyxir/calyx/issues/1603) and [#2086](https://github.com/calyxir/calyx/issues/2086) for details.
