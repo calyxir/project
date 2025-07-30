@@ -44,6 +44,65 @@ The new YXI system has these components:
 [cocotb]: https://www.cocotb.org
 
 
+Toward a Viable End-to-End System
+---------------------------------
+
+As a first order of business, let's aim for something that works end-to-end as a complete replacement for the old Verilog generator for AXI interfaces.
+The main things we need are:
+
+* Testing and CI improvements.
+    * We are pretty close to having Cocotb-based end-to-end correctness tests for AXI-wrapped Calyx code. Let's set this up in Runt and test a range of small Calyx programs this way, in CI. [Nathaniel's Zulip message][nathaniel-zulip] has pointers about how to do this.
+    * Let's extend the Cocotb testbench to support Xilinx's `s_axi_control` management interface. This will give us a way to test the whole system with all open-source tools. Let's enable this in CI too.
+* Debug the current AXI generators. One or both of the existing AXI wrapper generators have some correctness issues; armed with our testing infrastructure above, let's find and fix those bugs.
+* Validate the new AXI interfaces on our real Xilinx FPGAs. Once things are all working using the Cocotb testbench, let's run it (a) in Xilinx's cosimulation environment and (b) on real hardware. It's unlikely we can get anything CI-like working with Xilinx tools, but just doing this manually will be satisfying.
+* Finally, we can deprecate or remove the old Verilog generator and officially recommend YXI as the "one true way" to run Calyx code on real hardware.
+
+[nathaniel-zulip]: https://calyx.zulipchat.com/#narrow/channel/445339-calyx-yxi/topic/AXI.20Controller/near/531247840
+
+
+More Researchy Directions
+-------------------------
+
+Once we have something minimally viable, there are a few more legitimately researchy next steps to try.
+These are in no particular order; we can pick any of these to address next.
+
+### Calyx Language Improvements
+
+The Calyx-implemented AXI interfaces stretch the Calyx programming language in new ways that do not arise in other frontends.
+The core reason is the need for cycle-level timing guarantees in the presence of dynamic latencies.
+(Calyx has historically focused on *either* cycle-level timing *or* dynamic latencies, but combining them has not been a focus.)
+A notable example that (I think?) is implemented and working is [the `@fast` attribute][fast attr] for transitioning between dynamic and static control.
+
+The goal in this project would be to extend the Calyx IL and compiler to support stuff in the AXI interfaces that is currently inconvenient to express.
+Basically, the idea is to make notes about things that are not ideal in the current language, design language extensions, discuss them with the Calyx community, and implement them in the compiler.
+
+[fast attr]: https://github.com/calyxir/calyx/issues/1828
+
+### Fancier Host/Accelerator Interfaces
+
+The "big idea" with YXI is that it is an abstraction layer over hardware interfaces.
+It generically describes the data that needs to be exchanged;
+then, a concrete interface *mechanism* decides how to exchange that data.
+We currently have two interface implementations:
+a "fully eager" one that exchanges all data in bulk,
+and a "fully lazy" one that only fetches/sends data on demand.
+Most real programs probably want something in the middle.
+So this project would focus on implementing "interesting" AXI exchange strategies that strike a better balance between the two.
+
+A simple place to start would be with a cache: i.e., a small on-chip SRAM that stores *N* recently-accessed values.
+But there are surely more creative ways to implement this interface that could improve on the complexity and efficiency of a straightforward cache.
+
+### Performance Measurement
+
+As part of the above, let's get serious about measuring the performance of host/accelerator interfaces.
+We'll need an array of benchmarks with different data-access characteristics and a systematic way to understand the data transfer cost and the end-to-end execution time.
+
+## Other Targets
+
+Xilinx FPGAs are not the entire world (surprisingly!).
+Let's try to use the YXI abstraction layer to implement interfaces for Altera FPGAs or even some ASIC target we cook up.
+
+
 Implicated Technical Debt
 -------------------------
 
