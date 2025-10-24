@@ -3,7 +3,7 @@ Calyx Open Design Meetings
 
 ### Meeting Details
 
-- **Time**: 4:00pm ET (Fall 2024)
+- **Time**: TK (We don't currently have a weekly recurring time.)
 - [**Zoom meeting link**](https://cornell.zoom.us/j/91029135563?pwd=YlArTmN6MVRlYmc2aHVRclI5cnRXUT09)
 
 ### Structure
@@ -21,6 +21,7 @@ It is usually really helpful to have something written down ahead of time about 
 | 2025-04-14 | @AyanaAlemayehu | CSE optimization pass proposal | [Design Proposal](https://docs.google.com/document/d/1Qxe6XExa4gI5kv3SMzMR77VFHDORagnkOgR4L2yP1q0/edit?usp=sharing) |
 | 2025-04-28 | @Mark1626 | Calyx Posit Binding Showcase | [Slides](https://docs.google.com/presentation/d/1ocnJFQa6KSnBtd3SeWDiU4aiL895-h5BGrdEBjdQOiw/edit?usp=sharing) |
 | 2025-08-11 | @sampsyo & @eclecticgriffin | This Time Interval in Calyx | |
+| 2025-10-24 | @javathunderman | Zinnia | [repository](https://github.com/javathunderman/zinnia) |
 
 [#1837]: https://github.com/orgs/calyxir/discussions/1837
 [#1825]: https://github.com/orgs/calyxir/discussions/1825
