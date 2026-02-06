@@ -12,4 +12,4 @@ In contrast, states have no data and supply no functions. Instead ops, the thing
 Thinking about parametric parameters as tags for ops to read I think suggests a few things about the design:
 - An MVP probably shouldn't involve the planners. This feature can be useful without any type checking and just getting the tags working might require a fair bit of effort across the stack.
 - One case where type checking could be helpful is when an op which takes in `state1[t1]` and wants to return `state2[t1]`, keeping the tag invariant between the input and output. This would be hard though as it requires some sort of analysis of scripts themselves which currently isn't done.
-- A user might want an op to return a different state based on the tag of an input. This would require additional planner support (and thinking of an efficient algorithm could be hard) but it might not require changing fud2's internal representation.
+- A user might want an op to return different states for different tags on an input. This would require additional planner support (and thinking of an efficient algorithm could be hard) but it might not require changing fud2's internal representation.
